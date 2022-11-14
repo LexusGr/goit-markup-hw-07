@@ -1,0 +1,30 @@
+.flexcenter {
+  display: flex;
+  justify-content: center;
+}
+
+.features-list {
+  gap: 30px;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.features-list__item {
+  width: 270px;
+}
+
+.features-svg-container {
+  height: 120px;
+  align-items: center;
+  margin-bottom: 30px;
+  border-radius: 4px;
+  background-color: var(--secondory-background-color);
+}
+
+.features .features-text {
+  margin-top: 10px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondory-text-color);
+}

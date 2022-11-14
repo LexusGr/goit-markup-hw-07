@@ -1,0 +1,104 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--therd-background-color);
+  & .container {
+    display: flex;
+    align-items: baseline;
+  }
+  & .logo {
+    display: inline-block;
+    margin: 0 0 20px 0;
+  }
+  &-social {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
+  & .social-list__link {
+    color: var(--primery-background-color);
+    background-color: var(--background-footer-icon);
+    transition: background-color var(--transition-animation);
+    height: 100%;
+    align-items: center;
+    border-radius: 50%;
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+    }
+  }
+  & .submit {
+    gap: 10px;
+    width: 200px;
+    &:hover,
+    &:focus {
+      background-color: var(--secondory-accent-color);
+    }
+  }
+}
+
+.logo--wigth {
+  color: var(--primery-wight);
+}
+
+.address-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 9px;
+  width: 231px;
+  list-style: none;
+  &__link {
+    text-decoration: none;
+    transition: color var(--transition-animation);
+    color: var(--primery-wight);
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color var(--transition-animation);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+    &--color {
+      color: var(--therd-text-color);
+    }
+  }
+}
+
+.footer-social-title {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: var(--primery-background-color);
+}
+
+.footer-form-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: var(--primery-wight);
+}
+.footer-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  padding-left: 16px;
+  color: var(--therd-text-color);
+  background-color: var(--therd-background-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: transparent;
+  transition: border-color var(--transition-animation);
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.input-send {
+  fill: currentColor;
+}

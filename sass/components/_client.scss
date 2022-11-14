@@ -1,0 +1,18 @@
+.client-item {
+  width: 170px;
+  height: 92px;
+}
+
+.client-link {
+  transition: border-color var(--transition-animation), color var(--transition-animation);
+  height: 100%;
+  align-items: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--background-icon);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+  }
+}
