@@ -56,6 +56,30 @@ img {
   height: auto;
 }
 
+.label-checkbox, .header-contact__link, .header-contact, .menu, .navigation, .page-header .container, .button {
+  display: flex;
+  align-items: center;
+}
+
+.filters-list, .client-link, .social-list__link, .social-list, .engage-list__title, .engage-list, .features-svg-container, .features-list {
+  display: flex;
+  justify-content: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+}
+
 body {
   background: var(--primery-wight);
   color: var(--primery-text-color);
@@ -79,8 +103,6 @@ body {
 .button {
   background-color: var(--accent-color);
   transition: background-color var(--transition-animation);
-  display: flex;
-  align-items: center;
   justify-content: center;
   height: 50px;
   font-family: "Roboto";
@@ -102,13 +124,6 @@ body {
   margin: 0 auto;
 }
 
-.title-h3 {
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
 .section-title {
   margin-bottom: 50px;
   font-size: 36px;
@@ -117,38 +132,12 @@ body {
   letter-spacing: 0.03em;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  -webkit-clip-path: inset(50%);
-          clip-path: inset(50%);
-  margin: -1px;
-}
-
 .page-header {
   padding-top: 24px;
   padding-bottom: 25px;
   border: 1px solid #ececec;
 }
-.page-header .container {
-  display: flex;
-  align-items: center;
-}
-
-.navigation {
-  display: flex;
-  align-items: center;
-}
-
 .menu {
-  display: flex;
-  align-items: center;
   gap: 50px;
   list-style: none;
 }
@@ -191,13 +180,9 @@ body {
 .header-contact {
   gap: 50px;
   margin-left: auto;
-  display: flex;
-  align-items: center;
   list-style: none;
 }
 .header-contact__link {
-  display: flex;
-  align-items: center;
   text-decoration: none;
   color: var(--secondory-text-color);
 }
@@ -259,15 +244,8 @@ body {
   background-color: var(--secondory-accent-color);
 }
 
-.flexcenter {
-  display: flex;
-  justify-content: center;
-}
-
 .features-list {
   gap: 30px;
-  display: flex;
-  justify-content: center;
   list-style: none;
 }
 
@@ -283,7 +261,14 @@ body {
   background-color: var(--secondory-background-color);
 }
 
-.features .features-text {
+.features__title {
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.features__text {
   margin-top: 10px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -307,6 +292,10 @@ body {
   bottom: 0;
   width: 100%;
   height: 70px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   align-items: center;
   color: var(--primery-wight);
   background-color: rgba(47, 48, 58, 0.8);
@@ -315,30 +304,30 @@ body {
 .team {
   background-color: var(--secondory-background-color);
 }
-.team .team-name, .team .team-position {
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
 
 .team-list {
   display: flex;
   gap: 30px;
 }
 
-.container-team {
+.team-container {
   padding: 30px 0;
 }
-
-.team-name {
+.team-container__name {
   font-weight: 500;
   margin-bottom: 10px;
 }
-
-.team-position {
+.team-container__position {
   margin-bottom: 16px;
   color: var(--secondory-text-color);
+}
+
+.team-container__name,
+.team-container__position {
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .team-list__item {
@@ -459,11 +448,19 @@ body {
 .footer-social-title {
   display: inline-block;
   margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--primery-background-color);
 }
 
 .footer-form-title {
   font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--primery-wight);
 }
@@ -655,9 +652,7 @@ body {
 
 /* checkbox */
 .label-checkbox {
-  display: flex;
   justify-content: center;
-  align-items: center;
   gap: 7px;
   line-height: 1.71;
   margin-top: 20px;

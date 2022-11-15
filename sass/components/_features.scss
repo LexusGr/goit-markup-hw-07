@@ -1,12 +1,6 @@
-.flexcenter {
-  display: flex;
-  justify-content: center;
-}
-
 .features-list {
   gap: 30px;
-  display: flex;
-  justify-content: center;
+  @extend %justify-center;
   list-style: none;
 }
 
@@ -16,13 +10,17 @@
 
 .features-svg-container {
   height: 120px;
+  @extend %justify-center;
   align-items: center;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: var(--secondory-background-color);
 }
+.features__title {
+  @include font(14px, 1.14, 0.03em, null, uppercase);
+}
 
-.features .features-text {
+.features__text {
   margin-top: 10px;
   line-height: 1.71;
   letter-spacing: 0.03em;

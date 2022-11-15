@@ -1,7 +1,10 @@
 @import './utills/variables';
 @import './base/reset';
-@import './base/base';
+@import './utills/placeholders';
+@import './utills/mixin';
 @import './utills/hidden';
+
+@import './base/base';
 
 @import './components/header';
 @import './components/hero';

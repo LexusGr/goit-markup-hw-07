@@ -8,9 +8,7 @@
 .input-label {
   display: block;
   margin-bottom: 4px;
-  font-size: 12px;
-  line-height: 1.67;
-  letter-spacing: 0.01em;
+  @include font(12px, 1.67, 0.01em);
   color: var(--secondory-text-color);
 }
 
@@ -35,8 +33,7 @@
   outline: transparent;
   transition: border-color var(--transition-animation);
   &::placeholder {
-    font-size: 12px;
-    letter-spacing: 0.01em;
+    @include font(12px, null, 0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
   &:focus {
@@ -56,8 +53,7 @@
   outline: transparent;
   transition: border-color var(--transition-animation);
   &::placeholder {
-    font-size: 12px;
-    letter-spacing: 0.01em;
+    @include font(12px, null, 0.01em);
     color: rgba(117, 117, 117, 0.5);
   }
   &:focus {
@@ -68,9 +64,8 @@
 /* checkbox */
 
 .label-checkbox {
-  display: flex;
   justify-content: center;
-  align-items: center;
+  @extend %aling-center;
   gap: 7px;
   line-height: 1.71;
   margin-top: 20px;
@@ -113,8 +108,7 @@
 }
 .checkbox-text {
   display: flex;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  @include font(null, 1.17, 0.03em);
   color: var(--secondory-text-color);
 }
 .licence-link {

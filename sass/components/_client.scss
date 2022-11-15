@@ -5,6 +5,7 @@
 
 .client-link {
   transition: border-color var(--transition-animation), color var(--transition-animation);
+  @extend %justify-center;
   height: 100%;
   align-items: center;
   border: 1px solid #afb1b8;

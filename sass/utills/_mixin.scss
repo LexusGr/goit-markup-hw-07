@@ -1,0 +1,9 @@
+@mixin font($size, $height, $spacing, $weight, $transform) {
+  font-size: $size;
+  line-height: $height;
+  letter-spacing: $spacing;
+  font-weight: $weight;
+  text-transform: $transform;
+}
+
+// @include font(36px, 1.17, 0.03em, null, uppercase);
