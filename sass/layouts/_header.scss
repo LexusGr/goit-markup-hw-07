@@ -19,7 +19,7 @@
 .logo {
   color: var(--accent-color);
   font-family: 'Raleway';
-  @include font(26px, 1.19, 0.03em);
+  @include font(26px, 1.19, 0.03em, null, null);
   margin-right: 93px;
   text-decoration: none;
 }
@@ -65,7 +65,7 @@
 
 .menu__link,
 .header-contact__link {
-  @include font(null, null, 0.02em, 500);
+  @include font(null, null, 0.02em, 500, null);
   transition: color var(--transition-animation);
   &:hover,
   &:focus {

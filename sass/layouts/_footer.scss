@@ -85,7 +85,7 @@
 .footer-input {
   width: 358px;
   height: 50px;
-  @include font(16px, 1.25, 0.03em);
+  @include font(16px, 1.25, 0.03em, null, null);
   padding-left: 16px;
   color: var(--therd-text-color);
   background-color: var(--therd-background-color);

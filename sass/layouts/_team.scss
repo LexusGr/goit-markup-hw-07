@@ -19,7 +19,7 @@
 }
 .team-container__name,
 .team-container__position {
-  @include font(16px, 1.18, 0.03em);
+  @include font(16px, 1.18, 0.03em, null, null);
   text-align: center;
 }
 

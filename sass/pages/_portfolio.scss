@@ -6,7 +6,7 @@
 .filters-button {
   font-family: 'Roboto';
   padding: 6px 22px;
-  @include font(16px, 1.62, 0.03em, 500);
+  @include font(16px, 1.62, 0.03em, 500, null);
   border-radius: 4px;
   border-color: transparent;
   transition: color var(--transition-animation), background-color var(--transition-animation),
@@ -40,7 +40,7 @@
   overflow: auto;
   display: inline-block;
   padding: 63px 24px 0 24px;
-  @include font(18px, 1.56, 0.03em);
+  @include font(18px, 1.56, 0.03em, null, null);
   color: var(--primery-wight);
   background-color: rgba(33, 150, 243, 0.9);
 }
@@ -67,11 +67,11 @@
 
 .progects-title {
   margin-bottom: 4px;
-  @include font(18px, 2, 0.06em);
+  @include font(18px, 2, 0.06em, null, null);
   color: var(--primery-text-color);
 }
 
 .progects-text {
-  @include font(16px, 1.88, 0.03em);
+  @include font(16px, 1.88, 0.03em, null, null);
   color: var(--secondory-text-color);
 }
