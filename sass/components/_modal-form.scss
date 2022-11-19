@@ -9,7 +9,7 @@
   display: block;
   margin-bottom: 4px;
   @include font(12px, 1.67, 0.01em, null, null);
-  color: var(--secondory-text-color);
+  color: $secondory-text-color;
 }
 
 .input-wrap {
@@ -21,7 +21,7 @@
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
-  transition: fill var(--transition-animation);
+  transition: fill $transition-animation;
 }
 
 .modal-input {
@@ -31,16 +31,16 @@
   border-radius: 4px;
   padding-left: 40px;
   outline: transparent;
-  transition: border-color var(--transition-animation);
+  transition: border-color$transition-animation;
   &::placeholder {
     @include font(12px, null, 0.01em, null, null);
     color: rgba(117, 117, 117, 0.5);
   }
   &:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
   &:focus + .modal-input-icon {
-    fill: var(--accent-color);
+    fill: $accent-color;
   }
 }
 .modal-text {
@@ -51,13 +51,13 @@
   padding: 12px 16px;
   resize: none;
   outline: transparent;
-  transition: border-color var(--transition-animation);
+  transition: border-color $transition-animation;
   &::placeholder {
     @include font(12px, null, 0.01em, null, null);
     color: rgba(117, 117, 117, 0.5);
   }
   &:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
 
@@ -70,9 +70,9 @@
   line-height: 1.71;
   margin-top: 20px;
   margin-bottom: 30px;
-  color: var(--secondory-text-color);
+  color: $secondory-text-color;
   & > a {
-    color: var(--accent-color);
+    color: $accent-color;
   }
 }
 
@@ -80,12 +80,12 @@
   position: relative;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--primery-text-color);
+  border: 2px solid $primery-text-color;
   border-radius: 2px;
   background-color: transparent;
-  transition: border-color var(--transition-animation);
+  transition: border-color $transition-animation;
   & > svg {
-    transition: opacity var(--transition-animation);
+    transition: opacity $transition-animation;
   }
 }
 
@@ -95,8 +95,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
-  fill: var(--primery-background-color);
-  background-color: var(--accent-color);
+  fill: $primery-background-color;
+  background-color: $accent-color;
   border-radius: 2px;
 }
 
@@ -109,10 +109,10 @@
 .checkbox-text {
   display: flex;
   @include font(null, 1.17, 0.03em, null, null);
-  color: var(--secondory-text-color);
+  color: $secondory-text-color;
 }
 .licence-link {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 /* button submit */
@@ -123,6 +123,6 @@
   text-align: center;
   &:hover,
   &:focus {
-    background-color: var(--secondory-accent-color);
+    background-color: $secondory-accent-color;
   }
 }

@@ -13,8 +13,8 @@
 .hero {
   text-align: center;
   padding: 200px 0;
-  color: var(--primery-wight);
-  background-color: var(--therd-background-color);
+  color: $primery-wight;
+  background-color: $therd-background-color;
 }
 
 .hero-title {
@@ -28,6 +28,6 @@
   margin: 30px auto 0;
   &:hover,
   &:focus {
-    background-color: var(--secondory-accent-color);
+    background-color: $secondory-accent-color;
   }
 }

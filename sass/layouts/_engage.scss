@@ -19,6 +19,6 @@
   height: 70px;
   @include font(14px, 1.14, 0.03em, null, uppercase);
   align-items: center;
-  color: var(--primery-wight);
+  color: $primery-wight;
   background-color: rgba(47, 48, 58, 0.8);
 }

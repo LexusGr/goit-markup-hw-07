@@ -14,7 +14,7 @@
   align-items: center;
   margin-bottom: 30px;
   border-radius: 4px;
-  background-color: var(--secondory-background-color);
+  background-color: $secondory-background-color;
 }
 .features__title {
   @include font(14px, 1.14, 0.03em, null, uppercase);
@@ -24,5 +24,5 @@
   margin-top: 10px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--secondory-text-color);
+  color: $secondory-text-color;
 }

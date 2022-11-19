@@ -9,13 +9,13 @@
   @include font(16px, 1.62, 0.03em, 500, null);
   border-radius: 4px;
   border-color: transparent;
-  transition: color var(--transition-animation), background-color var(--transition-animation),
-    box-shadow var(--transition-animation);
-  background-color: var(--secondory-background-color);
+  transition: color $transition-animation, background-color $transition-animation,
+    box-shadow $transition-animation;
+  background-color: $secondory-background-color;
   &:hover,
   &:focus {
-    color: var(--primery-wight);
-    background-color: var(--accent-color);
+    color: $primery-wight;
+    background-color: $accent-color;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
@@ -36,12 +36,12 @@
   top: 0;
   height: 100%;
   transform: translateY(100%);
-  transition: transform var(--transition-animation);
+  transition: transform $transition-animation;
   overflow: auto;
   display: inline-block;
   padding: 63px 24px 0 24px;
   @include font(18px, 1.56, 0.03em, null, null);
-  color: var(--primery-wight);
+  color: $primery-wight;
   background-color: rgba(33, 150, 243, 0.9);
 }
 
@@ -52,9 +52,9 @@
   padding: 20px 24px;
 }
 .progects-link {
-  transition: box-shadow var(--transition-animation);
+  transition: box-shadow $transition-animation;
   display: block;
-  border: 1px solid var(--primery-gray);
+  border: 1px solid $primery-gray;
   &:hover,
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
@@ -68,10 +68,10 @@
 .progects-title {
   margin-bottom: 4px;
   @include font(18px, 2, 0.06em, null, null);
-  color: var(--primery-text-color);
+  color: $primery-text-color;
 }
 
 .progects-text {
   @include font(16px, 1.88, 0.03em, null, null);
-  color: var(--secondory-text-color);
+  color: $secondory-text-color;
 }

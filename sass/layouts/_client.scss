@@ -4,16 +4,16 @@
 }
 
 .client-link {
-  transition: border-color var(--transition-animation), color var(--transition-animation);
+  transition: border-color $transition-animation, color $transition-animation;
   @extend %justify-center;
   height: 100%;
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--background-icon);
+  color: $background-icon;
   &:hover,
   &:focus {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
+    border-color: $accent-color;
+    color: $accent-color;
   }
 }

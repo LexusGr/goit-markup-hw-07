@@ -1,7 +1,7 @@
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: var(--therd-background-color);
+  background-color: $therd-background-color;
   & .container {
     display: flex;
     align-items: baseline;
@@ -15,15 +15,15 @@
     margin-right: 93px;
   }
   & .social-list__link {
-    color: var(--primery-background-color);
-    background-color: var(--background-footer-icon);
-    transition: background-color var(--transition-animation);
+    color: $primery-background-color;
+    background-color: $background-footer-icon;
+    transition: background-color $transition-animation;
     height: 100%;
     align-items: center;
     border-radius: 50%;
     &:hover,
     &:focus {
-      background-color: var(--accent-color);
+      background-color: $accent-color;
     }
   }
   & .submit {
@@ -31,13 +31,13 @@
     width: 200px;
     &:hover,
     &:focus {
-      background-color: var(--secondory-accent-color);
+      background-color: $secondory-accent-color;
     }
   }
 }
 
 .logo--wigth {
-  color: var(--primery-wight);
+  color: $primery-wight;
 }
 
 .address-list {
@@ -48,17 +48,17 @@
   list-style: none;
   &__link {
     text-decoration: none;
-    transition: color var(--transition-animation);
-    color: var(--primery-wight);
+    transition: color $transition-animation;
+    color: $primery-wight;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    transition: color var(--transition-animation);
+    transition: color $transition-animation;
     &:hover,
     &:focus {
-      color: var(--accent-color);
+      color: $accent-color;
     }
     &--color {
-      color: var(--therd-text-color);
+      color: $therd-text-color;
     }
   }
 }
@@ -67,14 +67,14 @@
   display: inline-block;
   margin-bottom: 20px;
   @include font(14px, 1.14, 0.03em, null, uppercase);
-  color: var(--primery-background-color);
+  color: $primery-background-color;
 }
 
 .footer-form-title {
   font-weight: 700;
   @include font(14px, 1.14, 0.03em, null, uppercase);
   margin-bottom: 20px;
-  color: var(--primery-wight);
+  color: $primery-wight;
 }
 .footer-form {
   display: flex;
@@ -87,15 +87,15 @@
   height: 50px;
   @include font(16px, 1.25, 0.03em, null, null);
   padding-left: 16px;
-  color: var(--therd-text-color);
-  background-color: var(--therd-background-color);
+  color: $therd-text-color;
+  background-color: $therd-background-color;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: transparent;
-  transition: border-color var(--transition-animation);
+  transition: border-color $transition-animation;
   &:focus {
-    border-color: var(--accent-color);
+    border-color: $accent-color;
   }
 }
 
